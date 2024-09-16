@@ -2,7 +2,7 @@
 
 1. Install Android Studio.
 
-2. Add a new Android virtual device (AVD): Google Pixel 3a, Android 12 (API 31), select **Google Play** image.
+2. Add a new Android virtual device (AVD): Google Pixel 4, Android 12 (API 31), select **Google Play** image.
 
 3. Set Edit / Show Advanced Settings / Cold boot option.
 
@@ -23,7 +23,7 @@ git clone https://gitlab.com/newbit/rootAVD.git
 ```
 cd ~/Library/Android/sdk/emulator
 ./emulator -list-avds
-./emulator -avd Pixel_3_API_31_Google_Play -writable-system
+./emulator -avd Pixel_4_API_31_Google_Play -writable-system
 ```
 
 8. Check if the AVD is rooted:
@@ -49,7 +49,7 @@ adb push burp.crt /sdcard/Download
 4. Install Always Trust User Certificates Magisk module:
 ```
 wget https://github.com/NVISOsecurity/MagiskTrustUserCerts/releases/download/v0.4.1/AlwaysTrustUserCerts.zip
-adb push AlwaysTrustUserCerts.zip / sdcard/Download
+adb push AlwaysTrustUserCerts.zip /sdcard/Download
 ```
 Open Magisk app on the AVD / Modules / Install from Storage / Downloads / AlwaysTrustUserCerts.zip / Reboot
 
